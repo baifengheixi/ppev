@@ -28,45 +28,66 @@ const CustomersPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* Customer 1 */}
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
-              <div className="mb-6 h-32 flex items-center justify-center">
-                {/* Placeholder for customer logo - replace with actual logo */}
-                <div className="bg-neutral w-48 h-24 rounded flex items-center justify-center">
-                  <p className="text-sm text-gray-500">Logo</p>
+            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex flex-col">
+                <div className="mb-6 flex justify-center">
+                  <Image
+                    src="/images/our_customers/bangkok_company.png"
+                    alt="Department of Disaster Prevention and Mitigation Logo"
+                    width={192}
+                    height={96}
+                    className="object-contain"
+                  />
+                </div>
+                <div className="text-center">
+                  <h3 className="text-xl font-semibold mb-4 text-primary">Department of Disaster Prevention and Mitigation</h3>
+                  <p className="text-gray-600">
+                    Providing specialized vehicles and maintenance services to support disaster prevention efforts.
+                  </p>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-primary">Department of Disaster Prevention and Mitigation</h3>
-              <p className="text-gray-600">
-                Providing specialized vehicles and maintenance services to support disaster prevention efforts.
-              </p>
             </div>
 
             {/* Customer 2 */}
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
-              <div className="mb-6 h-32 flex items-center justify-center">
-                {/* Placeholder for customer logo - replace with actual logo */}
-                <div className="bg-neutral w-48 h-24 rounded flex items-center justify-center">
-                  <p className="text-sm text-gray-500">Logo</p>
+            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex flex-col">
+                <div className="mb-6 flex justify-center">
+                  <Image
+                    src="/images/our_customers/highways_company.png"
+                    alt="Department of Highways Logo"
+                    width={192}
+                    height={96}
+                    className="object-contain"
+                  />
+                </div>
+                <div className="text-center">
+                  <h3 className="text-xl font-semibold mb-4 text-primary">Department of Highways</h3>
+                  <p className="text-gray-600">
+                    Installing Rumble Strips on expressways and providing maintenance for highway patrol vehicles.
+                  </p>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-primary">Department of Highways</h3>
-              <p className="text-gray-600">
-                Installing Rumble Strips on expressways and providing maintenance for highway patrol vehicles.
-              </p>
             </div>
 
             {/* Customer 3 */}
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
-              <div className="mb-6 h-32 flex items-center justify-center">
-                {/* Placeholder for customer logo - replace with actual logo */}
-                <div className="bg-neutral w-48 h-24 rounded flex items-center justify-center">
-                  <p className="text-sm text-gray-500">Logo</p>
+            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex flex-col">
+                <div className="mb-6 flex justify-center">
+                  <Image
+                    src="/images/our_customers/royal_thai_police_company.png"
+                    alt="Royal Thai Police Logo"
+                    width={192}
+                    height={96}
+                    className="object-contain"
+                  />
+                </div>
+                <div className="text-center">
+                  <h3 className="text-xl font-semibold mb-4 text-primary">Royal Thai Police</h3>
+                  <p className="text-gray-600">
+                    Supplying and maintaining police vehicles to support law enforcement operations.
+                  </p>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-primary">Royal Thai Police</h3>
-              <p className="text-gray-600">
-                Supplying and maintaining police vehicles to support law enforcement operations.
-              </p>
             </div>
           </div>
         </div>
@@ -96,9 +117,13 @@ const CustomersPage = () => {
                 </div>
               </div>
               <div className="md:col-span-2 flex items-center justify-center">
-                {/* Placeholder for case study image - replace with actual image */}
-                <div className="bg-neutral bg-opacity-20 w-full h-56 rounded-lg flex items-center justify-center">
-                  <p className="text-lg text-gray-500">Project Image</p>
+                <div className="relative w-full h-56 rounded-lg overflow-hidden">
+                  <Image
+                    src="/images/achievements/achievements_3.png"
+                    alt="Vehicle Fleet Maintenance Project"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
                 </div>
               </div>
             </div>
@@ -108,9 +133,13 @@ const CustomersPage = () => {
           <div className="bg-white p-8 rounded-lg shadow-sm">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
               <div className="md:col-span-2 flex items-center justify-center md:order-1 order-2">
-                {/* Placeholder for case study image - replace with actual image */}
-                <div className="bg-neutral bg-opacity-20 w-full h-56 rounded-lg flex items-center justify-center">
-                  <p className="text-lg text-gray-500">Project Image</p>
+                <div className="relative w-full h-56 rounded-lg overflow-hidden">
+                  <Image
+                    src="/images/achievements/achievements_5.png"
+                    alt="Rumble Strips Implementation Project"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
                 </div>
               </div>
               <div className="md:col-span-3 md:order-2 order-1">
@@ -150,9 +179,14 @@ const CustomersPage = () => {
               </p>
               <div className="flex items-center">
                 <div className="mr-4">
-                  {/* Placeholder for customer avatar - replace with actual image */}
-                  <div className="bg-primary w-12 h-12 rounded-full flex items-center justify-center text-white font-bold">
-                    D
+                  <div className="relative w-12 h-12 rounded-full overflow-hidden">
+                    <Image
+                      src="/images/achievements/achievements_7.png"
+                      alt="Department Director"
+                      width={48}
+                      height={48}
+                      className="object-cover rounded-full"
+                    />
                   </div>
                 </div>
                 <div>
@@ -173,9 +207,14 @@ const CustomersPage = () => {
               </p>
               <div className="flex items-center">
                 <div className="mr-4">
-                  {/* Placeholder for customer avatar - replace with actual image */}
-                  <div className="bg-primary w-12 h-12 rounded-full flex items-center justify-center text-white font-bold">
-                    H
+                  <div className="relative w-12 h-12 rounded-full overflow-hidden">
+                    <Image
+                      src="/images/achievements/achievements_8.png"
+                      alt="Chief Engineer"
+                      width={48}
+                      height={48}
+                      className="object-cover rounded-full"
+                    />
                   </div>
                 </div>
                 <div>

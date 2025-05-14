@@ -17,9 +17,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              {/* Replace with actual logo when available */}
-              <div className="h-10 w-36 flex items-center font-bold text-xl">
-                P.P EV Energy
+              <div className="text-blue-ppev font-bold text-2xl">
+                P.P EV Energy Co., Ltd.
               </div>
             </Link>
           </div>
@@ -71,8 +70,8 @@ const Navbar = () => {
 // NavLink component for desktop navigation
 const NavLink = ({ href, label }: { href: string; label: string }) => {
   return (
-    <Link 
-      href={href} 
+    <Link
+      href={href}
       className="hover:text-secondary transition-colors"
     >
       {label}
@@ -81,18 +80,18 @@ const NavLink = ({ href, label }: { href: string; label: string }) => {
 };
 
 // MobileNavLink component for mobile navigation
-const MobileNavLink = ({ 
-  href, 
-  label, 
-  onClick 
-}: { 
-  href: string; 
-  label: string; 
+const MobileNavLink = ({
+  href,
+  label,
+  onClick
+}: {
+  href: string;
+  label: string;
   onClick: () => void;
 }) => {
   return (
-    <Link 
-      href={href} 
+    <Link
+      href={href}
       className="block py-2 hover:text-secondary transition-colors"
       onClick={onClick}
     >

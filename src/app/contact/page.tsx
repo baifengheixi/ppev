@@ -53,8 +53,18 @@ const ContactPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="bg-primary text-white py-16">
-        <div className="container mx-auto px-4">
+      <section className="bg-primary text-white py-24 md:py-32 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-30">
+          <Image
+            src="/images/company_area/company_area_4.png"
+            alt="Company Background"
+            fill
+            className="object-cover object-center"
+            sizes="100vw"
+            priority
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Contact Us</h1>
           <p className="text-xl max-w-4xl mx-auto text-center">
             Get in touch with our team to learn more about our services
@@ -77,11 +87,14 @@ const ContactPage = () => {
               <div className="space-y-6">
                 {/* Address */}
                 <div className="flex items-start">
-                  <div className="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
-                    <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
+                  <div className="p-1 mr-4 relative w-8 h-8">
+                    <Image
+                      src="/window.svg"
+                      alt="Address Icon"
+                      width={32}
+                      height={32}
+                      className="text-primary"
+                    />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-primary mb-1">Address</h3>
@@ -94,10 +107,14 @@ const ContactPage = () => {
 
                 {/* Email */}
                 <div className="flex items-start">
-                  <div className="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
-                    <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
+                  <div className="p-1 mr-4 relative w-8 h-8">
+                    <Image
+                      src="/file.svg"
+                      alt="Email Icon"
+                      width={32}
+                      height={32}
+                      className="text-primary"
+                    />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-primary mb-1">Email</h3>
@@ -107,10 +124,14 @@ const ContactPage = () => {
 
                 {/* Phone */}
                 <div className="flex items-start">
-                  <div className="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
-                    <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
+                  <div className="p-1 mr-4 relative w-8 h-8">
+                    <Image
+                      src="/globe.svg"
+                      alt="Phone Icon"
+                      width={32}
+                      height={32}
+                      className="text-primary"
+                    />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-primary mb-1">Phone</h3>

@@ -33,9 +33,14 @@ const AboutPage = () => {
               </p>
             </div>
             <div className="flex justify-center">
-              {/* Placeholder for company image - replace with actual image */}
-              <div className="bg-neutral bg-opacity-20 w-full h-80 rounded-lg flex items-center justify-center">
-                <p className="text-lg text-gray-500">Company Image</p>
+              <div className="relative w-full h-80 rounded-lg overflow-hidden">
+                <Image
+                  src="/images/company_area/company_area_2.png"
+                  alt="P.P EV Energy Company Headquarters"
+                  fill
+                  className="object-cover rounded-lg"
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -48,11 +53,13 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Mission */}
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                  <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
-                </svg>
+              <div className="mb-6 relative w-full h-80 overflow-hidden">
+                <Image
+                  src="/images/achievements/achievements_1.png"
+                  alt="Our Mission"
+                  fill
+                  className="object-cover rounded-lg"
+                />
               </div>
               <h3 className="text-2xl font-bold text-primary mb-4">Our Mission</h3>
               <p className="text-gray-700">
@@ -64,10 +71,13 @@ const AboutPage = () => {
 
             {/* Vision */}
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="bg-secondary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z" />
-                </svg>
+              <div className="mb-6 relative w-full h-80 overflow-hidden">
+                <Image
+                  src="/images/achievements/achievements_2.png"
+                  alt="Our Vision"
+                  fill
+                  className="object-cover rounded-lg"
+                />
               </div>
               <h3 className="text-2xl font-bold text-primary mb-4">Our Vision</h3>
               <p className="text-gray-700">
