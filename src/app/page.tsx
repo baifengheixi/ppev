@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative text-primary pt-0 pb-16 md:pb-24 overflow-hidden">
+      <section className="relative text-primary pt-24 pb-16 md:pb-24 overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image

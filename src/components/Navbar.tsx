@@ -11,8 +11,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white text-primary">
-      <div className="container mx-auto px-4 py-3">
+    <nav className="fixed w-full bg-transparent text-white z-50">
+      <div className="container mx-auto px-4 py-5">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
@@ -32,15 +32,15 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-white focus:outline-none"
+              className="focus:outline-none"
               aria-label="Toggle menu"
             >
               {isOpen ? (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
@@ -69,7 +69,7 @@ const NavLink = ({ href, label }: { href: string; label: string }) => {
   return (
     <Link
       href={href}
-      className="hover:text-secondary transition-colors text-lg font-medium px-2 py-1"
+      className="hover:text-secondary transition-colors text-lg font-medium px-2 py-1 text-secondary"
     >
       {label}
     </Link>
@@ -89,7 +89,7 @@ const MobileNavLink = ({
   return (
     <Link
       href={href}
-      className="block py-2 hover:text-secondary transition-colors"
+      className="block py-2 hover:text-secondary transition-colors text-secondary"
       onClick={onClick}
     >
       {label}

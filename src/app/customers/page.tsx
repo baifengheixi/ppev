@@ -5,7 +5,7 @@ const CustomersPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="bg-primary text-white py-16">
+      <section className="bg-primary text-white py-16 pt-24">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Our Main Customers</h1>
           <p className="text-xl max-w-4xl mx-auto text-center">
