@@ -108,7 +108,7 @@ const CustomersPage = () => {
                 </p>
                 <p className="text-gray-700 mb-4">
                   Our specialized technicians implemented a preventive maintenance program with
-                  24/7 emergency repair services to support the Royal Thai Police's firefighting operations nationwide.
+                  24/7 emergency repair services to support the Royal Thai Police&apos;s firefighting operations nationwide.
                 </p>
                 <div className="flex items-center text-primary">
                   <span className="font-medium mr-2">Results:</span>
@@ -146,7 +146,7 @@ const CustomersPage = () => {
                 <p className="text-gray-700 mb-4">
                   Install Milled-In Shoulder Rumble Strips on Motorway No. 7 to prevent accidents caused by
                   falling asleep at the wheel. Working closely with the Department of Highways, we successfully
-                  installed Rumble Strips on over 280 kilometers of Thailand's motorway network.
+                  installed Rumble Strips on over 280 kilometers of Thailand&apos;s motorway network.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Our specialized team deployed high-durability, noise-optimized Rumble Strips
@@ -171,7 +171,7 @@ const CustomersPage = () => {
                 </p>
                 <p className="text-gray-700 mb-4">
                   Our technical team implemented advanced armor plating, modernized weapon systems, and upgraded
-                  powertrains to meet current military standards while maintaining the vehicles' mobility and reliability.
+                  powertrains to meet current military standards while maintaining the vehicles&apos; mobility and reliability.
                 </p>
                 <div className="flex items-center text-primary">
                   <span className="font-medium mr-2">Results:</span>
