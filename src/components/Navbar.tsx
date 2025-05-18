@@ -11,19 +11,17 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-primary text-white">
+    <nav className="bg-white text-primary">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <div className="text-blue-ppev font-bold text-2xl">
-                P.P EV Energy Co., Ltd.
-              </div>
+              {/* Company name removed as requested */}
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-12 w-auto min-w-[600px] justify-between py-3">
             <NavLink href="/" label="Home" />
             <NavLink href="/customers" label="Customers" />
             <NavLink href="/about" label="About Us" />
@@ -71,7 +69,7 @@ const NavLink = ({ href, label }: { href: string; label: string }) => {
   return (
     <Link
       href={href}
-      className="hover:text-secondary transition-colors"
+      className="hover:text-secondary transition-colors text-lg font-medium px-2 py-1"
     >
       {label}
     </Link>

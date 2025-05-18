@@ -5,42 +5,60 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="bg-primary text-white py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 mb-8 md:mb-0">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Your Trusted Partner for Government Vehicles
-              </h1>
-              <p className="text-xl mb-8">
-                P.P EV Energy Co., Ltd. provides quality services and distributes vehicles
-                for government agencies with a focus on professionalism, responsibility, and safety.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/about"
-                  className="bg-secondary text-white px-6 py-3 rounded-md font-medium transition-colors hover:bg-opacity-90 text-center"
-                >
-                  Learn More
-                </Link>
-                <Link
-                  href="/contact"
-                  className="bg-white text-primary px-6 py-3 rounded-md font-medium transition-colors hover:bg-opacity-90 text-center"
-                >
-                  Contact Us
-                </Link>
-              </div>
-            </div>
-            <div className="md:w-1/2 md:flex justify-center hidden">
-              <div className="relative w-full h-80 rounded-lg overflow-hidden">
+      <section className="relative text-primary pt-0 pb-16 md:pb-24 overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/background.jpg"
+            alt="Background"
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+          <div className="absolute inset-0  bg-opacity-70"></div>
+        </div>
+
+        <div className="container mx-auto px-0 relative z-10">
+          <div className="flex flex-col items-center justify-center">
+            {/* Centered Logo */}
+            <div className="w-full max-w-5xl mx-auto flex justify-center">
+              <div className="relative w-full aspect-[3/1.5] max-w-5xl">
                 <Image
-                  src="/images/company_area/company_area_1.png"
-                  alt="P.P EV Energy Company"
+                  src="/images/logo.png"
+                  alt="P.P EV Energy Logo"
                   fill
-                  className="object-cover rounded-lg"
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw"
                   priority
                 />
               </div>
+            </div>
+
+            {/* Company Name */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 text-primary">
+              P.P EV Energy Co., Ltd.
+            </h1>
+
+            {/* Company Description */}
+            <p className="text-lg md:text-xl text-center max-w-2xl mb-8 text-primary">
+              Providing quality services and distributing vehicles for government agencies with a focus on professionalism, responsibility, and safety.
+            </p>
+
+            {/* Call to Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/about"
+                className="bg-secondary text-white px-6 py-3 rounded-md font-medium transition-colors hover:bg-opacity-90 text-center shadow-md"
+              >
+                Learn More
+              </Link>
+              <Link
+                href="/contact"
+                className="bg-white border-2 border-white text-primary px-6 py-3 rounded-md font-medium transition-colors hover:bg-opacity-90 text-center shadow-md"
+              >
+                Contact Us
+              </Link>
             </div>
           </div>
         </div>
@@ -59,7 +77,7 @@ export default function Home() {
             <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="mb-4 relative w-full h-80 overflow-hidden">
                 <Image
-                  src="/images/product_and_services/product_and_service_1.png"
+                  src="/images/achievements/achievements_1.png"
                   alt="Government Vehicle Maintenance"
                   fill
                   className="object-cover rounded-lg"
@@ -69,19 +87,13 @@ export default function Home() {
               <p className="text-gray-600 mb-4">
                 Comprehensive maintenance services for all types of government vehicles by our team of skilled technicians.
               </p>
-              <Link href="/services" className="text-secondary font-medium hover:underline inline-flex items-center">
-                Learn more
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* Service 2 */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="mb-4 relative w-full h-80 overflow-hidden">
                 <Image
-                  src="/images/product_and_services/product_and_service_3.png"
+                  src="/images/achievements/achievements_6.png"
                   alt="Rumble Strips on Motorways"
                   fill
                   className="object-cover rounded-lg"
@@ -91,34 +103,22 @@ export default function Home() {
               <p className="text-gray-600 mb-4">
                 Installation of speed-reducing strips on intercity expressways to increase driving safety.
               </p>
-              <Link href="/services" className="text-secondary font-medium hover:underline inline-flex items-center">
-                Learn more
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* Service 3 */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="mb-4 relative w-full h-80 overflow-hidden">
                 <Image
-                  src="/images/product_and_services/product_and_service_4.png"
-                  alt="Vehicle Distribution"
+                  src="/images/achievements/achievements_13.png"
+                  alt="Military Service and Support"
                   fill
                   className="object-cover rounded-lg"
                 />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-primary">Vehicle Distribution</h3>
+              <h3 className="text-xl font-semibold mb-2 text-primary">Service and Support for the Military</h3>
               <p className="text-gray-600 mb-4">
-                Distributing high-quality vehicles to various government agencies to meet their specific needs.
+                Specialized maintenance, repair, and vehicle solutions tailored to meet the unique requirements of military operations.
               </p>
-              <Link href="/services" className="text-secondary font-medium hover:underline inline-flex items-center">
-                Learn more
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
           </div>
         </div>

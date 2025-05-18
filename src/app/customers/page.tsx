@@ -7,7 +7,7 @@ const CustomersPage = () => {
       {/* Hero Section */}
       <section className="bg-primary text-white py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Our Customers</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Our Main Customers</h1>
           <p className="text-xl max-w-4xl mx-auto text-center">
             We proudly serve government agencies across Thailand
           </p>
@@ -40,7 +40,7 @@ const CustomersPage = () => {
                   />
                 </div>
                 <div className="text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-primary">Department of Disaster Prevention and Mitigation</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-primary">Bangkok Metropolitan Administration</h3>
                   <p className="text-gray-600">
                     Providing specialized vehicles and maintenance services to support disaster prevention efforts.
                   </p>
@@ -63,7 +63,7 @@ const CustomersPage = () => {
                 <div className="text-center">
                   <h3 className="text-xl font-semibold mb-4 text-primary">Department of Highways</h3>
                   <p className="text-gray-600">
-                    Installing Rumble Strips on expressways and providing maintenance for highway patrol vehicles.
+                    Installing Rumble Strips on expressways to prevent accidents caused by falling asleep while driving.
                   </p>
                 </div>
               </div>
@@ -97,30 +97,29 @@ const CustomersPage = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary mb-12 text-center">Success Stories</h2>
-
           {/* Case Study 1 */}
           <div className="bg-white p-8 rounded-lg shadow-sm mb-10">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
               <div className="md:col-span-3">
-                <h3 className="text-2xl font-semibold mb-4 text-primary">Vehicle Fleet Maintenance for Disaster Prevention</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-primary">Repair and Maintenance 499 fire truck to Royal Thai Police</h3>
                 <p className="text-gray-700 mb-4">
-                  We established a comprehensive maintenance program for the Department of Disaster Prevention and Mitigation&apos;s
-                  fleet of emergency response vehicles, ensuring they are always ready for deployment.
+                  We provided comprehensive repair and maintenance services for a fleet of 499 fire trucks
+                  for the Royal Thai Police, ensuring these critical emergency vehicles remain in optimal condition.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Our team of skilled technicians provides regular maintenance and rapid repair services,
-                  minimizing downtime for critical emergency vehicles.
+                  Our specialized technicians implemented a preventive maintenance program with
+                  24/7 emergency repair services to support the Royal Thai Police's firefighting operations nationwide.
                 </p>
                 <div className="flex items-center text-primary">
                   <span className="font-medium mr-2">Results:</span>
-                  <span className="text-gray-700">Reduced vehicle downtime by 40% and extended vehicle lifespan by 3+ years</span>
+                  <span className="text-gray-700">98% operational readiness achieved with 45% reduction in major repair costs</span>
                 </div>
               </div>
               <div className="md:col-span-2 flex items-center justify-center">
-                <div className="relative w-full h-56 rounded-lg overflow-hidden">
+                <div className="relative w-full h-80 rounded-lg overflow-hidden">
                   <Image
                     src="/images/achievements/achievements_3.png"
-                    alt="Vehicle Fleet Maintenance Project"
+                    alt="Fire Truck Maintenance Project"
                     fill
                     className="object-cover rounded-lg"
                   />
@@ -133,7 +132,7 @@ const CustomersPage = () => {
           <div className="bg-white p-8 rounded-lg shadow-sm">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
               <div className="md:col-span-2 flex items-center justify-center md:order-1 order-2">
-                <div className="relative w-full h-56 rounded-lg overflow-hidden">
+                <div className="relative w-full h-80 rounded-lg overflow-hidden">
                   <Image
                     src="/images/achievements/achievements_5.png"
                     alt="Rumble Strips Implementation Project"
@@ -143,83 +142,50 @@ const CustomersPage = () => {
                 </div>
               </div>
               <div className="md:col-span-3 md:order-2 order-1">
-                <h3 className="text-2xl font-semibold mb-4 text-primary">Rumble Strips Implementation on Major Highways</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-primary">Rumble Strips Implementation on Motorway</h3>
                 <p className="text-gray-700 mb-4">
-                  In partnership with the Department of Highways, we implemented Rumble Strips on over
-                  500 kilometers of major highways to enhance driving safety and reduce accidents.
+                  Install Milled-In Shoulder Rumble Strips on Motorway No. 7 to prevent accidents caused by
+                  falling asleep at the wheel. Working closely with the Department of Highways, we successfully
+                  installed Rumble Strips on over 280 kilometers of Thailand's motorway network.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Our expert team designed and installed durable, weather-resistant Rumble Strips
-                  that effectively alert drivers to potential hazards.
+                  Our specialized team deployed high-durability, noise-optimized Rumble Strips
+                  strategically positioned to alert drivers before critical sections of the motorway.
                 </p>
                 <div className="flex items-center text-primary">
                   <span className="font-medium mr-2">Results:</span>
-                  <span className="text-gray-700">30% reduction in accident rates in treated areas</span>
+                  <span className="text-gray-700">Significant reduction in fatigue-related accidents on treated motorway sections</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Testimonials */}
-      <section className="bg-secondary py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-primary mb-12 text-center">What Our Customers Say</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Testimonial 1 */}
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-              <svg className="w-10 h-10 text-secondary mb-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.192 15.757c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16.032-.52.112-1.082.24-.563.128-1.145.19-1.747.19-.6 0-1.156-.09-1.663-.267-.505-.178-.905-.454-1.207-.83-.302-.373-.453-.876-.453-1.51 0-.548.14-1.05.424-1.508.283-.46.665-.86 1.146-1.19.48-.334 1.017-.602 1.613-.806.595-.204 1.18-.307 1.755-.307.8 0 1.536.15 2.21.448.675.3 1.208.784 1.6 1.45.39.67.585 1.537.585 2.6 0 1.072-.16 2.033-.487 2.883-.283.792-.7 1.496-1.255 2.114-.553.617-1.2 1.09-1.936 1.42-.736.33-1.524.5-2.362.5-.98 0-1.72-.216-2.217-.65-.497-.434-.746-1.016-.746-1.746 0-.45.122-.835.366-1.155.244-.32.614-.48 1.11-.48.453 0 .815.096 1.084.283.27.192.467.466.594.826l.157.492c.05.13.134.252.25.367.12.11.344.17.285.17.38 0 .645-.327 1.012-.983.364-.657.545-1.474.545-2.448zm8.66 0c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16.032-.52.112-1.082.24-.563.128-1.145.19-1.747.19-.6 0-1.156-.09-1.663-.267-.504-.178-.905-.454-1.207-.83-.302-.373-.453-.876-.453-1.51 0-.548.14-1.05.424-1.508.283-.46.665-.86 1.146-1.19.48-.334 1.017-.602 1.613-.806.595-.204 1.18-.307 1.755-.307.8 0 1.536.15 2.21.448.675.3 1.21.784 1.6 1.45.39.67.585 1.537.585 2.6 0 1.072-.16 2.033-.487 2.883-.283.792-.7 1.496-1.255 2.114-.553.617-1.2 1.09-1.936 1.42-.736.33-1.524.5-2.362.5-.98 0-1.72-.216-2.217-.65-.497-.434-.746-1.016-.746-1.746 0-.45.122-.835.366-1.155.244-.32.614-.48 1.11-.48.453 0 .815.096 1.084.283.27.192.467.466.594.826l.157.492c.05.13.134.252.25.367.12.11.344.17.285.17.38 0 .645-.327 1.012-.983.364-.657.545-1.474.545-2.448z" />
-              </svg>
-              <p className="text-gray-700 mb-6 italic">
-                &quot;P.P EV Energy has been an invaluable partner in maintaining our emergency response vehicles.
-                Their technical expertise and quick turnaround times have greatly enhanced our operational readiness.&quot;
-              </p>
-              <div className="flex items-center">
-                <div className="mr-4">
-                  <div className="relative w-12 h-12 rounded-full overflow-hidden">
-                    <Image
-                      src="/images/achievements/achievements_7.png"
-                      alt="Department Director"
-                      width={48}
-                      height={48}
-                      className="object-cover rounded-full"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <p className="font-semibold text-primary">Director</p>
-                  <p className="text-gray-600 text-sm">Department of Disaster Prevention and Mitigation</p>
+          {/* Case Study 3 */}
+          <div className="bg-white p-8 rounded-lg shadow-sm mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+              <div className="md:col-span-3">
+                <h3 className="text-2xl font-semibold mb-4 text-primary">Upgrade the V150 armored vehicle</h3>
+                <p className="text-gray-700 mb-4">
+                  We successfully completed the comprehensive upgrade of V150 armored vehicles for the Royal Thai Army,
+                  enhancing combat capabilities while extending the operational lifespan of these critical assets.
+                </p>
+                <p className="text-gray-700 mb-4">
+                  Our technical team implemented advanced armor plating, modernized weapon systems, and upgraded
+                  powertrains to meet current military standards while maintaining the vehicles' mobility and reliability.
+                </p>
+                <div className="flex items-center text-primary">
+                  <span className="font-medium mr-2">Results:</span>
+                  <span className="text-gray-700">40% increase in protection capability and 25% improvement in operational efficiency</span>
                 </div>
               </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-              <svg className="w-10 h-10 text-secondary mb-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.192 15.757c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16.032-.52.112-1.082.24-.563.128-1.145.19-1.747.19-.6 0-1.156-.09-1.663-.267-.505-.178-.905-.454-1.207-.83-.302-.373-.453-.876-.453-1.51 0-.548.14-1.05.424-1.508.283-.46.665-.86 1.146-1.19.48-.334 1.017-.602 1.613-.806.595-.204 1.18-.307 1.755-.307.8 0 1.536.15 2.21.448.675.3 1.208.784 1.6 1.45.39.67.585 1.537.585 2.6 0 1.072-.16 2.033-.487 2.883-.283.792-.7 1.496-1.255 2.114-.553.617-1.2 1.09-1.936 1.42-.736.33-1.524.5-2.362.5-.98 0-1.72-.216-2.217-.65-.497-.434-.746-1.016-.746-1.746 0-.45.122-.835.366-1.155.244-.32.614-.48 1.11-.48.453 0 .815.096 1.084.283.27.192.467.466.594.826l.157.492c.05.13.134.252.25.367.12.11.344.17.285.17.38 0 .645-.327 1.012-.983.364-.657.545-1.474.545-2.448zm8.66 0c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16.032-.52.112-1.082.24-.563.128-1.145.19-1.747.19-.6 0-1.156-.09-1.663-.267-.504-.178-.905-.454-1.207-.83-.302-.373-.453-.876-.453-1.51 0-.548.14-1.05.424-1.508.283-.46.665-.86 1.146-1.19.48-.334 1.017-.602 1.613-.806.595-.204 1.18-.307 1.755-.307.8 0 1.536.15 2.21.448.675.3 1.21.784 1.6 1.45.39.67.585 1.537.585 2.6 0 1.072-.16 2.033-.487 2.883-.283.792-.7 1.496-1.255 2.114-.553.617-1.2 1.09-1.936 1.42-.736.33-1.524.5-2.362.5-.98 0-1.72-.216-2.217-.65-.497-.434-.746-1.016-.746-1.746 0-.45.122-.835.366-1.155.244-.32.614-.48 1.11-.48.453 0 .815.096 1.084.283.27.192.467.466.594.826l.157.492c.05.13.134.252.25.367.12.11.344.17.285.17.38 0 .645-.327 1.012-.983.364-.657.545-1.474.545-2.448z" />
-              </svg>
-              <p className="text-gray-700 mb-6 italic">
-                &quot;The Rumble Strips installed by P.P EV Energy have significantly improved safety on our highways.
-                Their professional approach and quality workmanship have made them our preferred contractor.&quot;
-              </p>
-              <div className="flex items-center">
-                <div className="mr-4">
-                  <div className="relative w-12 h-12 rounded-full overflow-hidden">
-                    <Image
-                      src="/images/achievements/achievements_8.png"
-                      alt="Chief Engineer"
-                      width={48}
-                      height={48}
-                      className="object-cover rounded-full"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <p className="font-semibold text-primary">Chief Engineer</p>
-                  <p className="text-gray-600 text-sm">Department of Highways</p>
+              <div className="md:col-span-2 flex items-center justify-center">
+                <div className="relative w-full h-80 rounded-lg overflow-hidden">
+                  <Image
+                    src="/images/achievements/achievements_14.png"
+                    alt="V150 Armored Vehicle Upgrade Project"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
                 </div>
               </div>
             </div>

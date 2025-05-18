@@ -247,56 +247,6 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
-
-      {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-primary mb-12 text-center">Frequently Asked Questions</h2>
-
-          <div className="max-w-3xl mx-auto">
-            {/* FAQ Item 1 */}
-            <div className="mb-8">
-              <h3 className="text-xl font-semibold mb-3 text-primary">What services do you provide for government vehicles?</h3>
-              <p className="text-gray-700">
-                We provide comprehensive maintenance services for all types of government vehicles,
-                including routine maintenance, repairs, and emergency services. Our team of skilled
-                technicians ensures that your vehicles remain in optimal condition.
-              </p>
-            </div>
-
-            {/* FAQ Item 2 */}
-            <div className="mb-8">
-              <h3 className="text-xl font-semibold mb-3 text-primary">How can I request a quote for your services?</h3>
-              <p className="text-gray-700">
-                You can request a quote by filling out the contact form on this page, calling our
-                office directly, or sending an email to info@ppev.co.th. We will respond promptly
-                with a detailed quote based on your specific requirements.
-              </p>
-            </div>
-
-            {/* FAQ Item 3 */}
-            <div className="mb-8">
-              <h3 className="text-xl font-semibold mb-3 text-primary">What types of vehicles do you distribute to government agencies?</h3>
-              <p className="text-gray-700">
-                We distribute a wide range of vehicles to government agencies, including patrol cars,
-                emergency response vehicles, maintenance vehicles, and specialized vehicles for specific
-                government functions. All vehicles meet strict quality and performance standards.
-              </p>
-            </div>
-
-            {/* FAQ Item 4 */}
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-primary">What is the process for installing Rumble Strips on highways?</h3>
-              <p className="text-gray-700">
-                Our Rumble Strips installation process involves site assessment, design planning,
-                material preparation, and professional installation by our expert team. We work closely
-                with highway departments to ensure minimal disruption to traffic while maximizing safety
-                benefits.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
