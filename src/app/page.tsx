@@ -146,7 +146,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="text-center">
-                  <h3 className="text-xl font-semibold mb-2 text-primary">Department of Disaster Prevention and Mitigation</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-primary">Bangkok Metropolitan Administration</h3>
                 </div>
               </div>
             </div>
